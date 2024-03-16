@@ -43,7 +43,7 @@ class Botique(TelegramClient):
         self.me = await self.get_me()
         self.uid = telethon.utils.get_peer_id(self.me)
 
-        core_plugin = Path(__file__).parent / "_core.py"
+        core_plugin = Path(__file__).parent / "plugs.py"
         await self.load_plugin_from_file(core_plugin)
 
         for p in Path().glob(f"{self._plugin_path}/*.py"):
