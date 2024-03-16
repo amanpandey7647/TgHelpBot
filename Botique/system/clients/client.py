@@ -8,7 +8,7 @@ from telethon import TelegramClient
 import telethon.utils
 import telethon.events
 from Botique.services.funcs import *
-
+from Botique.services.data import *
 class ReverseList(list):
     def __iter__(self):
         return reversed(self)
